@@ -19,7 +19,7 @@ with open("usrname.txt", "r+") as usrname_file:
             ssh = paramiko.SSHClient()
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh.connect("remote.cip.ifi.lmu.de", username=entered_usrname, password=pw)
-            ssh_stdin, ssh_stdout, ssh_stderr = ssh.exec_command("cd Desktop; mkdir Print_Workds")
+            ssh_stdin, ssh_stdout, ssh_stderr = ssh.exec_command("cd Desktop; mkdir Print_Works")
             ssh.close()
         entered_usrname = input("It seems you are using the program for the first time. Enter your CIP username: ")
         usrname_file.write(entered_usrname)
