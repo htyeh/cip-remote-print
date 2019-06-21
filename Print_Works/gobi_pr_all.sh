@@ -1,0 +1,1 @@
+lpr -P gobi *.pdf
