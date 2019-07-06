@@ -1,1 +1,0 @@
-lpr -P kalahari *.pdf

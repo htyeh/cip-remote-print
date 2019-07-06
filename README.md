@@ -2,7 +2,7 @@
 
 ## How it works
 
-Your files are transfered to the CIP server, an ssh session is performed where one of the shell script located on the server is called. Subsequently the printed files are (optionally) removed.
+PDFs in this directory are transfered to the CIP server, an ssh session with the server is performed where the PDFs are sent to one of the printers. Subsequently the printed files are removed (optional).
 
 ## What you need
 
@@ -18,6 +18,6 @@ Your files are transfered to the CIP server, an ssh session is performed where o
 
 ## Printing
 
- 1. Draw your files to print into this directory, **make sure there is no space in any file names**
+ 1. Move some PDFs to this directory, **make sure there are no spaces in file names**
  2. Run **print.py**
- 3. Answering **Print successful?(Y/N)** with **Y** will delete printed files in this directory
+ 3. Answering **Print successful?(Y/N)** with **Y** or **y** will delete all PDFs in **Print_Works** on the server and in this directory
