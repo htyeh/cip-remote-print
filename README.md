@@ -2,12 +2,14 @@
 
 ## How it works
 
-PDFs in this directory are transfered to the CIP server, an ssh session with the server is performed where the PDFs are sent to one of the printers. Subsequently the printed files are removed (optional).
+1. PDFs in this directory are transfered to the CIS server
+2. An ssh session is performed and the PDFs are sent to one of the printers
+3. If the print succeeds, you can optionally remove the files from this directory
 
 ## What you need
 
- 1. Paramiko module
- 2. An ssh keypair on your PC (guide for generating an ssh keypair: https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)
+ 1. Python Paramiko module (to perform ssh and execute commands)
+ 2. An ssh keypair on your PC (to ensure passwordless remote connection, guide for generating an ssh keypair: https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)
 
 ## Setup before usage
 
